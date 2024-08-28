@@ -5,12 +5,13 @@ import styles from './styles';
 
 import MyButton from '../../components/MyButton';
 
-export default function Home() {
+export default function Ghibli() {
   return (
     <View style={styles.container}>
-      <Title title={"Home"}/>
+      <Title title={"Ghibli"}/>
+
+      <MyButton screen={'Home'} name={'Go To Home'}/>
       <MyButton screen={'Totoro'} name={'Go To Totoro'}/>
-      <MyButton screen={'Ghibli'} name={'Go To Ghibli'}/>
     </View>
   );
 }
