@@ -1,17 +1,17 @@
-import { View, Text, TouchableOpacity } from 'react-native'
-import { useNavigation } from '@react-navigation/native';
+import { View } from 'react-native'
 
+import Title from '../../components/Title';
 import styles from './styles';
+import MyButton from '../../components/MyButton';
+
 
 export default function Totoro() {
-    const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>My Neighbor Totoro</Text>
+      <Title title={"My Neighbor Totoro"}/>
+      <MyButton screen={'Home'} name={'Go To Home'}/>
 
-      <TouchableOpacity onPress={()=> navigation.navigate("Home")}>
-        <Text style={styles.text}>Go to Home</Text>
-      </TouchableOpacity>
+      
     </View>
   );
 }
